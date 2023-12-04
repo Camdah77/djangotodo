@@ -16,7 +16,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #secret key
-import env
+if os.path.exists('env.py'):
+    import env
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -27,7 +28,10 @@ SECRET_KEY = 'django-insecure-=^)h192jvg#))p4io&^onsq*j$eiz83%s-))fa47$hx*9)(%i6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-camdah77-djangotodo-fkei7fdfgu.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-camdah77-djangotodo-fkei7fdfgu.us2.codeanyapp.com' , 
+                 '8000-camdah77-djangotodo-oeywv4lnl2t.ws-eu106.gitpod.io']
+
+
 
 
 # Application definition
