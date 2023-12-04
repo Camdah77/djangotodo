@@ -1,6 +1,9 @@
 `python3 -m http.server`
 python3 manage.py runserver
 
+Useful links:
+ Pep8   <https://peps.python.org/pep-0008/>
+
 To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
 A button should appear to click: _Open Preview_ or _Open Browser_.
@@ -17,6 +20,4 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
 
-Happy coding!
