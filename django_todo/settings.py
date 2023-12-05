@@ -29,7 +29,8 @@ SECRET_KEY = 'django-insecure-=^)h192jvg#))p4io&^onsq*j$eiz83%s-))fa47$hx*9)(%i6
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-camdah77-djangotodo-fkei7fdfgu.us2.codeanyapp.com' , 
-                 '8000-camdah77-djangotodo-oeywv4lnl2t.ws-eu106.gitpod.io']
+                 '8000-camdah77-djangotodo-oeywv4lnl2t.ws-eu106.gitpod.io',
+                 '8000-camdah77-djangotodo-8xeyhab55iq.ws-eu106.gitpod.io']
 
 
 

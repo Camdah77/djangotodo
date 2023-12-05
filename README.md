@@ -4,6 +4,11 @@ python3 manage.py runserver
 Useful links:
  Pep8   <https://peps.python.org/pep-0008/>
 
+ Install Django:
+ pip3 install 'django<4'
+
+
+
 To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
 A button should appear to click: _Open Preview_ or _Open Browser_.
