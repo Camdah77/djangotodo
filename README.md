@@ -7,6 +7,13 @@ Useful links:
  Install Django:
  pip3 install 'django<4'
 
+Install Coverage
+pip3 install coverage
+
+coverage run --source=todo manage.py test
+coverage report
+coverage html
+python3 -m http.server
 
 
 To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
