@@ -10,7 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import datetime
+import dj_database_url
 from pathlib import Path
+
+if os.path.isfile('env.py'):
+     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,9 +89,12 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+DATABASES['default'] = dj_database_url.parse('mysql://postgres://bljjbxvy:***@cornelius.db.elephantsql.com/bljjbxvy ')
+
 
 
 # Password validation
